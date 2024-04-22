@@ -87,6 +87,7 @@ pub fn metabuild() {
 	println!("cargo:rustc-link-arg=/DEFAULTLIB:libcmt.lib");
 	println!("cargo:rustc-link-arg=/DEFAULTLIB:libvcruntime.lib");
 	println!("cargo:rustc-link-arg=/DEFAULTLIB:ucrt.lib");
+	println!("cargo:rustc-link-arg=/DEFAULTLIB:msvcprt.lib");
 }
 
 /// Override the hard-coded msvcrt.lib by replacing it with a (mostly) empty object file.
